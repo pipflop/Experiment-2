@@ -1,0 +1,37 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a;
+	int even;
+	
+	cout<<" _____________________________"<<endl;
+	cout<<"|                             |"<<endl;
+	cout<<"|       COUNTING NUMBERS      |"<<endl;
+	cout<<"|           UP TO 30          |"<<endl;
+	cout<<"|_____________________________|"<<endl<<endl;
+	
+	cout<<"Counting..."<<endl;
+	
+	for (a=1; a<=9; a++)
+	{
+		cout<<a<<", ";
+
+		
+		if (a == 9)
+		{
+			for (a=5; a<=15; a++)
+			{
+				even= 2 * a;
+				cout<<even<<", ";	
+			}	
+		}
+		
+			
+	}
+	
+	_getch();
+	return 0;
+}
+
