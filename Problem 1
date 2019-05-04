@@ -1,0 +1,75 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;	
+int main()
+{
+	char package;
+	int hours;   
+	
+	cout<<" _____________________________"<<endl;
+	cout<<"|                             |"<<endl;
+	cout<<"|       MONTHLY BILL FOR      |"<<endl;
+	cout<<"|   INTERNET SERVICE PROVIDER |"<<endl;
+	cout<<"|_____________________________|"<<endl;
+	
+	cout<<endl<<"Type of package purchased (a, b, c): ";
+	cin>>package;
+	
+	if(package == 'a' || package == 'A')
+	{
+		cout<<"Hours used: ";
+		cin>>hours;
+		
+		cout<<endl<<"_______________________"<<endl;
+		
+		if (hours >= 0 && hours <= 10)
+		{
+			cout<<endl<<"MONTHLY DUE: P995";
+		}
+		else if (hours > 10)
+		{
+			cout<<endl<<"MONTHLY DUE: P"<<995 + ((hours - 10) * 20);
+		}
+		else
+		{
+			cout<<endl<<"INVALID HOURS! =____=";
+		}
+	}
+	else if (package == 'b' || package == 'B')
+	{
+		cout<<"Hours used: ";
+		cin>>hours;
+		
+		cout<<endl<<"_______________________"<<endl;
+		
+		if (hours >=0 && hours <= 20)
+		{
+			cout<<endl<<"MONTHLY DUE: P1495";
+		}
+		else if (hours > 20)
+		{
+			cout<<endl<<"MONTHLY DUE: P"<<1495 + ((hours - 20) * 10);
+		}
+		else
+		{
+			cout<<endl<<"INVALID HOURS! =____=";
+		}
+	}		
+	else if (package == 'c' || package == 'C')
+	{
+		cout<<"Unlimited Access was provided!";
+		
+		cout<<endl<<"_______________________"<<endl;
+		cout<<endl<<"MONTHLY DUE: P1995";	
+	}
+	else
+	{
+		cout<<endl<<"_______________________"<<endl;
+		cout<<endl<<"INVALID PACKAGE! =____=";
+	}	
+	
+	cout<<endl<<"_______________________"<<endl;
+		
+	_getch();
+	return 0;
+}
