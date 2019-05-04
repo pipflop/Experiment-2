@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int fib1=0;
+	int fib2=1;
+	int next=0;
+	int a;
+	
+	cout<<" ______________________________"<<endl;
+	cout<<"|                              |"<<endl;
+	cout<<"|       FIBONACCI SERIES       |"<<endl;
+	cout<<"|______________________________|"<<endl<<endl;
+	
+	cout<<endl<<"The 22 Fibonacci Series as follows... "<<endl;
+	cout<<fib1<<", "<<fib2;
+	
+	for (a=1; a<=20; a++)
+	{
+		next = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = next;
+		
+		cout<<", "<<next;
+	}
+	
+	_getch();
+	return 0;
+}
