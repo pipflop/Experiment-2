@@ -1,0 +1,33 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	double number;
+	double product;
+	int a;
+	
+	cout<<" ________________________________"<<endl;
+	cout<<"|                                |"<<endl;
+	cout<<"|      MULTIPLICATION TABLE      |"<<endl;
+	cout<<"|       OF A GIVEN NUMBER        |"<<endl;
+	cout<<"|________________________________|"<<endl;
+	
+	cout<<endl<<"Enter a number: ";
+	cin>>number;
+
+	cout<<endl<<"____________________________________"<<endl<<endl;
+	cout<<"  ** Multiplication Table of "<<number<<" ** "<<endl<<endl;
+		
+	for (a=1; a<=10; a++)
+	{
+		product = number * a;
+		cout<<"\t   "<<a<<" * "<<number<<" = "<<product<<endl;
+	}
+	
+	cout<<"____________________________________"<<endl;
+	
+	_getch();
+	return 0;
+}
+
