@@ -1,0 +1,41 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	
+	int columns;
+	int rows;
+	int xr;
+	int yc;
+	
+	cout<<" _________________________________"<<endl;
+	cout<<"|                                 |"<<endl;
+	cout<<"|      A BOX OF ASTERISKS (*)     |"<<endl;
+	cout<<"|_________________________________|"<<endl<<endl;
+	
+	cout<<endl<<"Enter number of rows: ";
+	cin>>rows;
+	
+	cout<<"Enter number of columns: ";
+	cin>>columns;
+	
+	cout<<endl<<endl;
+
+	for(xr=1; xr<=rows; xr++)
+	{
+		
+		for(yc=1; yc<=columns; yc++)
+		{
+			cout<<" * ";
+		}
+		
+		cout<<endl;
+	}
+	
+	
+	_getch();
+	return 0;
+}
+
