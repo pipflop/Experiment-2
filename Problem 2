@@ -1,0 +1,51 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	double present;
+	double previous;
+	double total_pres;
+	double total_prev;
+	double final;
+	
+	cout<<"\t ___________________________"<<endl;
+	cout<<"\t|                           |"<<endl;
+	cout<<"\t|       COMPUTATION OF      |"<<endl;
+	cout<<"\t|         WATER BILL        |"<<endl;
+	cout<<"\t|___________________________|"<<endl;
+	
+	cout<<endl<<"Enter PRESENT Water Consumption in Gallons: ";
+	cin>>present;
+	total_pres = present * 1.10;
+	
+	cout<<"Enter PREVIOUS Water Concumption in Gallons: ";
+	cin>>previous;
+	total_prev = previous * 1.10;
+	
+	cout<<endl<<"_________________________________"<<endl;
+	cout<<endl<<"   ******** RECEIPT ********"<<endl;
+	cout<<endl<<"Water Demand Charge : P35";
+	cout<<endl<<"Present Water Concumption: P"<<total_pres;
+	cout<<endl<<"Previous Water Concumption: P"<<total_prev<<endl;
+	
+	if (previous <= 0)
+	{
+		
+		final = total_pres + total_prev + 35;
+		cout<<endl<<"TOTAL WATER BILL: P"<<final;
+	}
+	else
+	{
+		cout<<"Late Charge: P20"<<endl;
+		
+		final = total_pres + total_prev + 35 + 20;
+		cout<<endl<<"TOTAL WATER BILL: P"<<final;
+	}
+	
+	
+	cout<<endl<<"_________________________________";
+	
+	_getch();
+	return 0;
+}
